@@ -1,5 +1,4 @@
 # 《新概念英语》
-# 新概念英语
 
 本项目在 [New_concept_English](https://github.com/SeleneStar/New_concept_English) 基础上做了如下调整：
 1. 将目录名及文件名改为英文；
@@ -66,9 +65,3 @@
 - Language textbooks  
 - English-language education  
 - English as a second or foreign language  
-
----
-
-✅ This Markdown version removes the Wikipedia system messages and focuses only on the **article content**, structured for readability.  
-
-Would you like me to also create a **minimal Markdown summary** (just the essentials: publication date, author, and book list) for quick reference?
