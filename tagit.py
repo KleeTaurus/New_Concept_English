@@ -2,12 +2,13 @@ import os
 from mutagen.id3 import ID3, TIT2, TPE1, TALB
 from mutagen.mp3 import MP3
 
-def process_mp3_files(folder_path):
+def process_mp3_files(folder_name):
     # 固定的标签信息
     NEW_ARTIST = "Louis George Alexander"
-    NEW_ALBUM = "NCE_book4-fluency-in-english"
+    NEW_ALBUM = "NCE_" + folder_name.upper()
 
     # 检查文件夹是否存在
+    folder_path = "./" + folder_name
     if not os.path.exists(folder_path):
         print(f"错误：文件夹 {folder_path} 不存在")
         return
@@ -56,6 +57,10 @@ def process_mp3_files(folder_path):
 if __name__ == "__main__":
     # 在这里输入你的 MP3 文件所在的文件夹路径
     # 如果就在当前目录下，可以使用 "."
-    target_folder = "./mp3_book4-fluency-in-english"
-    process_mp3_files(target_folder)
+    target_folders = ["book1_first_things_first",
+                      "book2_practice_&_progress",
+                      "book3_developing_skills",
+    				  "book4_fluency_in_english"]
+    for folder_name in target_folders:
+    	process_mp3_files(folder_name)
     print("\n所有操作已完成！")
